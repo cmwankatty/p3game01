@@ -1,1 +1,51 @@
-hello
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Past Tense Balloon Shooter (Primary 3)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap" aria-live="polite">
+    <header>
+      <h1>Pop the Past!</h1>
+      <p class="hint">Pop balloons that show past-time words (e.g., ago, last, yesterday).</p>
+      <div class="status">
+        <div>Score: <span id="score">0</span></div>
+        <div>Lives: <span id="lives">3</span></div>
+        <div>Level: <span id="level">1</span></div>
+      </div>
+    </header>
+
+    <section id="gameArea" class="game-area" role="application" aria-label="Balloon popping game area">
+      <div id="message" class="message" aria-hidden="true"></div>
+    </section>
+
+    <footer class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+      <div class="word-lists">
+        <strong>Correct past-time indicators:</strong>
+        <ul>
+          <li>ago</li>
+          <li>last</li>
+          <li>yesterday</li>
+          <li>in the past</li>
+          <li>once upon a time</li>
+        </ul>
+        <strong>Not past-time indicators (don't pop):</strong>
+        <ul>
+          <li>next</li>
+          <li>always</li>
+          <li>usually</li>
+          <li>now</li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
